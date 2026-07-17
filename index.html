@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
 
 
@@ -22,16 +24,65 @@
         <div class="right">
             <div class="header">
                 <p>This is not a real online service! You know you need something like this in your life
-                to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
 
             <div class="form">
-                Let's do this!
+                <form>
+                    <legend>Let's do this!</legend>
+
+                    <div class="form-row">
+
+                        <div class="form-col">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John" name="first_name">
+                        </div>
+
+
+                        <div class="form-col">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Doe" name="last_name">
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-col">
+                            <label>Email</label>
+                            <input type="email" placeholder="example@gmail.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+
+
+                        <div class="form-col">
+                            <label>Phone Number</label>
+                            <input type="text" placeholder="123-456-7890" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-col">
+                            <label>Password</label>
+                            <input type="password" name="password" required>
+                        </div>
+
+
+                        <div class="form-col">
+                            <label>Confirm Password</label>
+                            <input type="password"  name="confirm" required>
+                        </div>
+
+                    </div>
+
+                </form>
+
             </div>
 
             <div class="bottom">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
                 <div class="log-in-text">Already have an account? <span>Log in</span></div>
             </div>
 
@@ -39,6 +90,7 @@
 
     </div>
 
-    
+
 </body>
+
 </html>

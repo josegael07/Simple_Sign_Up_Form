@@ -26,14 +26,14 @@ html, body{
 
 .left{
     background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
-    width: 35%;
+    width: 27%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
 }
 .right{
-    width: 65%;
+    width: 73%;
     background-color: rgb(250, 250, 250);
 }
 
@@ -58,7 +58,7 @@ img[src*="odin-logo"]{
 
 .header{
     font-size: 1.5em;
-    margin: 13% 18% 5% 4%;
+    margin: 8% 18% 3% 4%;
 }
 
 .form{
@@ -76,18 +76,58 @@ img[src*="odin-logo"]{
 button{
     background-color: var(--button-color);
     color: white;
+    font-weight: 600;
     border-radius: 5px;
     box-shadow: 1px 3px 2px rgba(0, 0, 0, .2);
     border-width: 0;
-    height: 3em;
-    width: 12em;
+    height: 3.5em;
+    width: 14em;
     margin-bottom: 3%;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 3px 5px 2px rgba(0, 0, 0, .2);
 }
 .log-in-text{
     font-weight: 500;
 }
-
 span{
     font-weight: 600;
     color: var(--button-color)
 }
+
+
+legend{
+    margin-bottom: 2%;
+}
+.form-row {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.form-col {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 0.65rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+    color: rgb(100, 100, 100);
+}
+input {
+    width: 250px;
+    height: .75em;
+    padding: 8px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+}
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, .2);
+}
+input:invalid{
+    border: 1px solid red;
+}
+
