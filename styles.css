@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("../fonts/Norse.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --button-color: #596D48;
+    --input-border-color: #E5E7EB;
+}
+
+html{
+    font-family: MyCustomFont, sans-serif;
+}
