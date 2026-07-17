@@ -1,6 +1,6 @@
 @font-face {
     font-family: "MyCustomFont";
-    src: url("../fonts/Norse.otf") format("opentype");
+    src: url("../fonts/Norsebold.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -8,8 +8,86 @@
 :root{
     --button-color: #596D48;
     --input-border-color: #E5E7EB;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
 }
 
-html{
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+
+.entire-container{
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    width: 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.right{
+    width: 65%;
+    background-color: rgb(250, 250, 250);
+}
+
+.logo{
+    color: white;
+    font-size: 5em;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17%;
+    width: 100%;
+    margin-top: 35%;
     font-family: MyCustomFont, sans-serif;
+}
+
+img[src*="odin-logo"]{
+    width: 15%;
+    height: auto;
+}
+
+.header{
+    font-size: 1.5em;
+    margin: 13% 18% 5% 4%;
+}
+
+.form{
+    background: white;
+    font-size: 1.5em;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, .2);
+    margin-bottom: 3%;
+    padding: 2% 12% 3% 4%;
+}
+
+
+.bottom{
+    padding-left: 4%;
+}
+button{
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, .2);
+    border-width: 0;
+    height: 3em;
+    width: 12em;
+    margin-bottom: 3%;
+}
+.log-in-text{
+    font-weight: 500;
+}
+
+span{
+    font-weight: 600;
+    color: var(--button-color)
 }
